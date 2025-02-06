@@ -1,0 +1,24 @@
+{
+  "name": "@mjt-services/daimon-common-2025",
+  "version": "2025.2.6-1258",
+  "sideEffects": false,
+  "description": "daimon commmon",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "docs": "typedoc src/index.ts",
+    "build": "tsc -b",
+    "build-docs": "pnpm run build && pnpm run docs",
+    "changelog": "./scripts/changes.sh > CHANGELOG.md",
+    "changelog-version": "pnpm run changelog && ./scripts/version.sh",
+    "publish": "pnpm run build-docs && pnpm run changelog-version"
+  },
+  "keywords": [],
+  "author": "Matt Taylor (https://mjt.dev)",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "typedoc": "^0.27.6",
+    "typescript": "^5.7.3"
+  }
+}
