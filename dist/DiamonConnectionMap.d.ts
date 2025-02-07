@@ -46,7 +46,7 @@ export type DaimonConnectionMap = {
                 id: string;
             };
         };
-        response: DiamonCharaCard;
+        response: DiamonCharaCard | undefined;
         headers: {
             url?: string;
             authToken?: string;
