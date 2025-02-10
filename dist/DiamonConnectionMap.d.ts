@@ -24,6 +24,19 @@ export type DaimonConnectionMap = {
             authToken?: string;
         };
     };
+    "daimon.update": {
+        request: {
+            options?: Partial<{}>;
+            body: Daimon;
+        };
+        response: {
+            success: boolean;
+        };
+        headers: {
+            url?: string;
+            authToken?: string;
+        };
+    };
     "daimon.import": {
         request: {
             options?: Partial<{}>;
@@ -47,6 +60,21 @@ export type DaimonConnectionMap = {
             };
         };
         response: Daimon | undefined;
+        headers: {
+            url?: string;
+            authToken?: string;
+        };
+    };
+    "daimon.remove": {
+        request: {
+            options?: Partial<{}>;
+            body: {
+                id: string;
+            };
+        };
+        response: {
+            success: boolean;
+        };
         headers: {
             url?: string;
             authToken?: string;

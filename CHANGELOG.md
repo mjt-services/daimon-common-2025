@@ -2,6 +2,7 @@
 
 
 ## 2025-02-10
+- added get/remove ([0213635](https://github.com/mjt-services/daimon-common-2025/commit/0213635f79b72c89bad3e0e8da1044659328185c)) by Matt Taylor
 - added daimon.list. fixed typename typo ([aaf3d01](https://github.com/mjt-services/daimon-common-2025/commit/aaf3d0108b83639fcd4c2e49f20f917ff7e0cea5)) by Matt Taylor
 
 ## 2025-02-07
