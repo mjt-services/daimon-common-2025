@@ -9,12 +9,12 @@ export type DaimonCharaCardV2Extensions = Partial<{
     voiceSampleUrl: string;
     loraUrl: string;
 }>;
-export type DiamonCharaCard = CharaCardV2<DaimonCharaCardV2Extensions>;
+export type DaimonCharaCard = CharaCardV2<DaimonCharaCardV2Extensions>;
 export type DaimonConnectionMap = {
     "daimon.create": {
         request: {
             options?: Partial<{}>;
-            body: DiamonCharaCard;
+            body: DaimonCharaCard;
         };
         response: {
             id: string;
@@ -46,7 +46,20 @@ export type DaimonConnectionMap = {
                 id: string;
             };
         };
-        response: DiamonCharaCard | undefined;
+        response: Daimon | undefined;
+        headers: {
+            url?: string;
+            authToken?: string;
+        };
+    };
+    "daimon.list": {
+        request: {
+            options?: Partial<{}>;
+            body: {
+                query?: string;
+            };
+        };
+        response: Daimon[];
         headers: {
             url?: string;
             authToken?: string;
