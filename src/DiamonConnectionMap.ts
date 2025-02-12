@@ -1,20 +1,36 @@
-import type { CharaCardV2 } from "./type/CharaCardV2";
-
-export type Daimon = {
-  id: string;
-  chara: CharaCardV2<DaimonCharaCardV2Extensions>;
-};
-
-export type DaimonCharaCardV2Extensions = Partial<{
-  avatarUrl: string;
-  vrmUrl: string;
-  voiceSampleUrl: string;
-  loraUrl: string;
-}>;
-
-export type DaimonCharaCard = CharaCardV2<DaimonCharaCardV2Extensions>;
+import type { DaimonCharaCard, Daimon } from "./type/Daimon";
+import type { ConversationMessageNode } from "./type/ConversationMessageNode";
 
 export type DaimonConnectionMap = {
+  "conversation.add": {
+    request: {
+      options?: Partial<{}>;
+      body: {
+        conversationId: string;
+        speakerId: string;
+        content: string;
+        parentId?: string;
+      };
+    };
+    response: { success: boolean };
+    headers: {
+      url?: string;
+      authToken?: string;
+    };
+  };
+  "conversation.search": {
+    request: {
+      options?: Partial<{}>;
+      body: {
+        query: string;
+      };
+    };
+    response: ConversationMessageNode[];
+    headers: {
+      url?: string;
+      authToken?: string;
+    };
+  };
   "daimon.create": {
     request: {
       options?: Partial<{}>;
