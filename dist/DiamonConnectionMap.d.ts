@@ -9,6 +9,8 @@ export type DaimonConnectionMap = {
                 speakerId: string;
                 content: string;
                 parentId?: string;
+                role: ConversationMessageNode["role"];
+                contentType: ConversationMessageNode["contentType"];
             };
         };
         response: {
