@@ -2,6 +2,7 @@
 
 
 ## 2025-02-13
+- add ConversationPoint type ([9c0751b](https://github.com/mjt-services/daimon-common-2025/commit/9c0751bb82a8b90577ce7e1695ff46b3ca29d67c)) by Matt Taylor
 - update character data to be full partial ([687171c](https://github.com/mjt-services/daimon-common-2025/commit/687171c6eac7b58b133f9889cde1c5e79c27a387)) by Matt Taylor
 - add parentId to cnversation.add ([cac553a](https://github.com/mjt-services/daimon-common-2025/commit/cac553add52dbdfb3405fb597bce99a185a61c42)) by Matt Taylor
 - move node-meta props to conv-msg-node type ([1f03215](https://github.com/mjt-services/daimon-common-2025/commit/1f032153063ffc9a0fdaca46614f58a9f6e4efd7)) by Matt Taylor
