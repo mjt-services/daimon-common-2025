@@ -11,10 +11,7 @@ export type ConversationChannel = {
   createdAt: number;
 };
 
-export type ConversationMessageNode = {
-  // --- Identity & Metadata ---
-  id: string; // Globally unique identifier.
-  parentId?: string; // The parent node's id (undefined for the root node).
+export type ConversationMessage = {
   groupId: string;
   channelId: string;
   conversationId: string; // Identifier for the conversation.
@@ -30,6 +27,12 @@ export type ConversationMessageNode = {
 
   // For finalized text messages, the complete Markdown string.
   content?: string;
+};
+
+export type ConversationMessageNode = ConversationMessage & {
+  // --- Identity & Metadata ---
+  id: string; // Globally unique identifier.
+  parentId?: string; // The parent node's id (undefined for the root node).
 
   // --- Conversation Structure ---
   // Alternative candidate branches for this node.
