@@ -3,7 +3,9 @@ export type ConversationConnectionMap = {
     "conversation.add": {
         request: {
             options?: Partial<{}>;
-            body: ConversationMessage;
+            body: {
+                parentId?: string;
+            } & ConversationMessage;
         };
         response: {
             success: boolean;
