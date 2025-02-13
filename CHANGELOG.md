@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-02-13
+- updated Conversation types ([0f70b85](https://github.com/mjt-services/daimon-common-2025/commit/0f70b85a9d1e41e9c3befff4d51b503a328c1bba)) by Matt Taylor
+
 ## 2025-02-12
 - udpated conversation.dadd props ([125c808](https://github.com/mjt-services/daimon-common-2025/commit/125c808a918460cfdf5bac3fbb564e7a7b39657c)) by Matt Taylor
 - added Conversation types ([105acfc](https://github.com/mjt-services/daimon-common-2025/commit/105acfc873ea5210560300d580f3d5a4f0aa4b09)) by Matt Taylor

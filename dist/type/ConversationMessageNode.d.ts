@@ -1,7 +1,20 @@
+export type ConversationGroup = {
+    id: string;
+    members: string[];
+};
+export type ConversationChannel = {
+    id: string;
+    groupId: string;
+    topic: string;
+    description?: string;
+    createdAt: number;
+};
 export type ConversationMessageNode = {
     id: string;
-    conversationId: string;
     parentId?: string;
+    groupId: string;
+    channelId: string;
+    conversationId: string;
     speakerId: string;
     role: "user" | "assistant" | "system";
     createdAt: number;
@@ -10,5 +23,4 @@ export type ConversationMessageNode = {
     contentType: "text" | "streaming" | "summary";
     content?: string;
     alternatives?: ConversationMessageNode[];
-    subAssistants?: ConversationMessageNode[];
 };
