@@ -11,11 +11,19 @@ export type ConversationChannel = {
   createdAt: number;
 };
 
+export type ConversationPoint = Partial<{
+  groupId: string;
+  channelId: string;
+  threadId: string;
+  conversationId: string;
+}>;
+
 export type ConversationMessage = {
   groupId: string;
   channelId: string;
-  conversationId: string; // Identifier for the conversation.
-  speakerId: string; // The identifier of the speaker.
+  conversationId: string;
+  threadId: string;
+  speakerId: string;
   role: "user" | "assistant" | "system"; // The role of the speaker.
 
   // --- Content ---
