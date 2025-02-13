@@ -9,9 +9,7 @@ export type ConversationChannel = {
     description?: string;
     createdAt: number;
 };
-export type ConversationMessageNode = {
-    id: string;
-    parentId?: string;
+export type ConversationMessage = {
     groupId: string;
     channelId: string;
     conversationId: string;
@@ -22,5 +20,9 @@ export type ConversationMessageNode = {
     removed?: boolean;
     contentType: "text" | "streaming" | "summary";
     content?: string;
+};
+export type ConversationMessageNode = ConversationMessage & {
+    id: string;
+    parentId?: string;
     alternatives?: ConversationMessageNode[];
 };

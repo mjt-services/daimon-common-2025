@@ -1,1 +1,1 @@
-{"root":["../src/conversationmessageevent.ts","../src/diamonconnectionmap.ts","../src/index.ts","../src/type/characardv2.ts","../src/type/conversationmessagenode.ts","../src/type/daimon.ts"],"version":"5.7.3"}
+{"root":["../src/conversationconnectionmap.ts","../src/conversationmessageevent.ts","../src/diamonconnectionmap.ts","../src/index.ts","../src/type/characardv2.ts","../src/type/conversationmessagenode.ts","../src/type/daimon.ts"],"version":"5.7.3"}

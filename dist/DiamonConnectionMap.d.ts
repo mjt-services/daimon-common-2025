@@ -1,39 +1,5 @@
 import type { DaimonCharaCard, Daimon } from "./type/Daimon";
-import type { ConversationMessageNode } from "./type/ConversationMessageNode";
 export type DaimonConnectionMap = {
-    "conversation.add": {
-        request: {
-            options?: Partial<{}>;
-            body: {
-                conversationId: string;
-                speakerId: string;
-                content: string;
-                parentId?: string;
-                role: ConversationMessageNode["role"];
-                contentType: ConversationMessageNode["contentType"];
-            };
-        };
-        response: {
-            success: boolean;
-        };
-        headers: {
-            url?: string;
-            authToken?: string;
-        };
-    };
-    "conversation.search": {
-        request: {
-            options?: Partial<{}>;
-            body: {
-                query: string;
-            };
-        };
-        response: ConversationMessageNode[];
-        headers: {
-            url?: string;
-            authToken?: string;
-        };
-    };
     "daimon.create": {
         request: {
             options?: Partial<{}>;

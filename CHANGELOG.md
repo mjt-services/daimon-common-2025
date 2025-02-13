@@ -2,6 +2,7 @@
 
 
 ## 2025-02-13
+- split message/node into two types, also split conv from daimon connection maps ([3da87ea](https://github.com/mjt-services/daimon-common-2025/commit/3da87ea1bb3dc97635ec6e4d96d0a6a48f603fad)) by Matt Taylor
 - updated Conversation types ([0f70b85](https://github.com/mjt-services/daimon-common-2025/commit/0f70b85a9d1e41e9c3befff4d51b503a328c1bba)) by Matt Taylor
 
 ## 2025-02-12
