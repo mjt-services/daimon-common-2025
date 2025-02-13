@@ -5,12 +5,12 @@ export type CharaCardV2<T extends Record<string, unknown> = {}> = {
 };
 
 export type CharacterData<T extends Record<string, unknown> = {}> = {
-  name: string;
-  description: string;
-  personality: string;
-  scenario: string;
-  first_mes: string;
-  mes_example: string;
+  name?: string;
+  description?: string;
+  personality?: string;
+  scenario?: string;
+  first_mes?: string;
+  mes_example?: string;
   creator_notes?: string;
   system_prompt?: string;
   post_history_instructions?: string;
