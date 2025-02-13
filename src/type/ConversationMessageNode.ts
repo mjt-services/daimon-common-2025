@@ -1,8 +1,23 @@
+export type ConversationGroup = {
+  id: string;
+  members: string[];
+};
+
+export type ConversationChannel = {
+  id: string;
+  groupId: string;
+  topic: string; // short name for the channel
+  description?: string; // long description for the channel
+  createdAt: number;
+};
+
 export type ConversationMessageNode = {
   // --- Identity & Metadata ---
   id: string; // Globally unique identifier.
-  conversationId: string; // Identifier for the conversation.
   parentId?: string; // The parent node's id (undefined for the root node).
+  groupId: string;
+  channelId: string;
+  conversationId: string; // Identifier for the conversation.
   speakerId: string; // The identifier of the speaker.
   role: "user" | "assistant" | "system"; // The role of the speaker.
   createdAt: number; // Timestamp (ms) when created.
@@ -19,6 +34,4 @@ export type ConversationMessageNode = {
   // --- Conversation Structure ---
   // Alternative candidate branches for this node.
   alternatives?: ConversationMessageNode[];
-  // Outputs from sub‑assistants (e.g., image generators) attached to this node.
-  subAssistants?: ConversationMessageNode[];
 };
