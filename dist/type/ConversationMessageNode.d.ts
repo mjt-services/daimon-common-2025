@@ -15,14 +15,14 @@ export type ConversationMessage = {
     conversationId: string;
     speakerId: string;
     role: "user" | "assistant" | "system";
-    createdAt: number;
-    updatedAt?: number;
-    removed?: boolean;
     contentType: "text" | "streaming" | "summary";
     content?: string;
 };
 export type ConversationMessageNode = ConversationMessage & {
     id: string;
     parentId?: string;
+    createdAt: number;
+    updatedAt?: number;
+    removed?: boolean;
     alternatives?: ConversationMessageNode[];
 };
