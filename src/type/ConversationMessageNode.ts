@@ -12,17 +12,13 @@ export type ConversationChannel = {
 };
 
 export type ConversationPoint = Partial<{
+  conversationId: string;
   groupId: string;
   channelId: string;
   threadId: string;
-  conversationId: string;
 }>;
 
-export type ConversationMessage = {
-  groupId: string;
-  channelId: string;
-  conversationId: string;
-  threadId: string;
+export type ConversationMessage = ConversationPoint & {
   speakerId: string;
   role: "user" | "assistant" | "system"; // The role of the speaker.
 
