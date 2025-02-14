@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-02-14
+- cleaned up ConversationMessage type ([d732936](https://github.com/mjt-services/daimon-common-2025/commit/d7329361c371a1aa10bc14e4fc7c6cdb5d9e1458)) by Matt Taylor
+
 ## 2025-02-13
 - add ConversationPoint type ([9c0751b](https://github.com/mjt-services/daimon-common-2025/commit/9c0751bb82a8b90577ce7e1695ff46b3ca29d67c)) by Matt Taylor
 - update character data to be full partial ([687171c](https://github.com/mjt-services/daimon-common-2025/commit/687171c6eac7b58b133f9889cde1c5e79c27a387)) by Matt Taylor
