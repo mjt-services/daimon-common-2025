@@ -1,7 +1,3 @@
-export type ConversationGroup = {
-    id: string;
-    members: string[];
-};
 export type ConversationChannel = {
     id: string;
     groupId: string;

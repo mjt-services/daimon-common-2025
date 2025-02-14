@@ -2,6 +2,7 @@
 
 
 ## 2025-02-14
+- removing ConversationGroup type in preference of letting that be handled at the service impl level ([bcfc4c1](https://github.com/mjt-services/daimon-common-2025/commit/bcfc4c1b977e43c906f2cf3da764d03bfff29f4d)) by Matt Taylor
 - cleaned up ConversationMessage type ([d732936](https://github.com/mjt-services/daimon-common-2025/commit/d7329361c371a1aa10bc14e4fc7c6cdb5d9e1458)) by Matt Taylor
 
 ## 2025-02-13
