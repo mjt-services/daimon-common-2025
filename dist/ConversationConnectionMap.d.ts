@@ -1,4 +1,4 @@
-import type { ConversationMessage, ConversationMessageNode } from "./type/ConversationMessageNode";
+import type { ConversationMessage, ConversationMessageNode, ConversationPoint } from "./type/ConversationMessageNode";
 export type ConversationConnectionMap = {
     "conversation.add": {
         request: {
@@ -6,6 +6,22 @@ export type ConversationConnectionMap = {
             body: {
                 parentId?: string;
             } & ConversationMessage;
+        };
+        response: {
+            success: boolean;
+        };
+        headers: {
+            url?: string;
+            authToken?: string;
+        };
+    };
+    "conversation.link": {
+        request: {
+            options?: Partial<{}>;
+            body: {
+                point: ConversationPoint;
+                daimonId: string;
+            };
         };
         response: {
             success: boolean;
