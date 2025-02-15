@@ -1,19 +1,13 @@
-export type ConversationChannel = {
+export type Room = Partial<{
   id: string;
-  groupId: string;
+  name?: string;
+  parentId?: string;
   topic: string; // short name for the channel
   description?: string; // long description for the channel
   createdAt: number;
-};
-
-export type ConversationPoint = Partial<{
-  conversationId: string;
-  groupId: string;
-  channelId: string;
-  threadId: string;
 }>;
 
-export type ConversationMessage = ConversationPoint & {
+export type RoomMessage = {
   speakerId: string;
   role: "user" | "assistant" | "system"; // The role of the speaker.
 
@@ -25,9 +19,10 @@ export type ConversationMessage = ConversationPoint & {
   content?: string;
 };
 
-export type ConversationMessageNode = ConversationMessage & {
+export type RoomNode = RoomMessage & {
   // --- Identity & Metadata ---
   id: string; // Globally unique identifier.
+  roomId: string; // The room this message belongs to.
   parentId?: string; // The parent node's id (undefined for the root node).
   createdAt: number; // Timestamp (ms) when created.
   updatedAt?: number; // Updated when content changes (e.g. streaming updates).
@@ -35,5 +30,5 @@ export type ConversationMessageNode = ConversationMessage & {
 
   // --- Conversation Structure ---
   // Alternative candidate branches for this node.
-  alternatives?: ConversationMessageNode[];
+  alternatives?: RoomNode[];
 };

@@ -1,11 +1,11 @@
-import type { ConversationMessageNode } from "./type/ConversationMessageNode";
+import type { RoomNode } from "./type/RoomMessageNode";
 
-export type ConversationMessageEvent = Record<
+export type RoomMessageEvent = Record<
   string,
   {
     request: {
       options?: Partial<{}>;
-      body: ConversationMessageNode;
+      body: RoomNode;
     };
     response: undefined;
     headers: {
