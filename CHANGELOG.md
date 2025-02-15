@@ -2,6 +2,7 @@
 
 
 ## 2025-02-15
+- cleanup type name ([75dd2dd](https://github.com/mjt-services/daimon-common-2025/commit/75dd2dd5238d081f93dc05763afd175c46d75fc7)) by Matt Taylor
 - Conversation -> Room ([391582e](https://github.com/mjt-services/daimon-common-2025/commit/391582e189fe5bf591f50803a8e285bbccf06f09)) by Matt Taylor
 
 ## 2025-02-14
