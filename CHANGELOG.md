@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-02-15
+- Conversation -> Room ([391582e](https://github.com/mjt-services/daimon-common-2025/commit/391582e189fe5bf591f50803a8e285bbccf06f09)) by Matt Taylor
+
 ## 2025-02-14
 - conversation.link operation introduced ([cd8c355](https://github.com/mjt-services/daimon-common-2025/commit/cd8c3558eac076a527e1a9fdc722c39a7fac9d12)) by Matt Taylor
 - removing ConversationGroup type in preference of letting that be handled at the service impl level ([bcfc4c1](https://github.com/mjt-services/daimon-common-2025/commit/bcfc4c1b977e43c906f2cf3da764d03bfff29f4d)) by Matt Taylor
