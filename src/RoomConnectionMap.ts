@@ -3,7 +3,7 @@ import type {
   RoomNode,
 } from "./type/RoomMessageNode";
 
-export type ConversationConnectionMap = {
+export type RoomConnectionMap = {
   "room.addMessage": {
     request: {
       options?: Partial<{}>;
