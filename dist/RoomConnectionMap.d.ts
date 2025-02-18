@@ -1,4 +1,4 @@
-import type { RoomMessage, RoomNode } from "./type/RoomMessageNode";
+import type { RoomContent, RoomNode } from "./type/RoomMessageNode";
 export type RoomConnectionMap = {
     "room.addMessage": {
         request: {
@@ -6,7 +6,7 @@ export type RoomConnectionMap = {
             body: {
                 roomId: string;
                 parentId?: string;
-            } & RoomMessage;
+            } & RoomContent;
         };
         response: {
             success: boolean;

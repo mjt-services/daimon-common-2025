@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-02-18
+- rework of RoomNode ([54e80cc](https://github.com/mjt-services/daimon-common-2025/commit/54e80ccb56e23dee0f720783f6c9f145b9a1c15f)) by Matt Taylor
+
 ## 2025-02-17
 - added DAIMON_OBJECT_STORE as exported const next to Daimon type ([fb4e2db](https://github.com/mjt-services/daimon-common-2025/commit/fb4e2db81229b7797cb36c2678f572c0df2b0137)) by Matt Taylor
 

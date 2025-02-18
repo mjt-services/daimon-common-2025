@@ -1,18 +1,10 @@
-export type Room = Partial<{
-    id: string;
-    name?: string;
-    parentId?: string;
-    topic: string;
-    description?: string;
-    createdAt: number;
-}>;
-export type RoomMessage = {
-    speakerId: string;
-    role: "user" | "assistant" | "system";
-    contentType: "text" | "streaming" | "summary";
-    content?: string;
+import type { ObjectStore } from "@mjt-services/data-common-2025";
+export type RoomContent = {
+    creatorId: string;
+    contentType: "text";
+    content: string;
 };
-export type RoomNode = RoomMessage & {
+export type RoomNode = RoomContent & {
     id: string;
     roomId: string;
     parentId?: string;
@@ -21,3 +13,4 @@ export type RoomNode = RoomMessage & {
     removed?: boolean;
     alternatives?: RoomNode[];
 };
+export declare const ROOM_NODE_OBJECT_STORE: ObjectStore<RoomNode>;
