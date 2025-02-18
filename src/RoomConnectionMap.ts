@@ -1,6 +1,6 @@
 import type {
   RoomContent,
-  RoomNode,
+  Room,
 } from "./type/RoomMessageNode";
 
 export type RoomConnectionMap = {
@@ -18,7 +18,7 @@ export type RoomConnectionMap = {
   "room.updateMessageNode": {
     request: {
       options?: Partial<{}>;
-      body: RoomNode;
+      body: Room;
     };
     response: { success: boolean };
     headers: {
@@ -55,7 +55,7 @@ export type RoomConnectionMap = {
         query: string;
       };
     };
-    response: RoomNode[];
+    response: Room[];
     headers: {
       url?: string;
       authToken?: string;
