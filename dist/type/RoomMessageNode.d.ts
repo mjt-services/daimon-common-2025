@@ -1,16 +1,15 @@
 import type { ObjectStore } from "@mjt-services/data-common-2025";
 export type RoomContent = {
-    creatorId: string;
+    creatorId?: string;
     contentType: "text";
     content: string;
 };
-export type RoomNode = RoomContent & {
+export type Room = RoomContent & {
     id: string;
-    roomId: string;
     parentId?: string;
     createdAt: number;
     updatedAt?: number;
     removed?: boolean;
-    alternatives?: RoomNode[];
+    alternatives?: Room[];
 };
-export declare const ROOM_NODE_OBJECT_STORE: ObjectStore<RoomNode>;
+export declare const ROOM_OBJECT_STORE: ObjectStore<Room>;

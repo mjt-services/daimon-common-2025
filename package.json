@@ -1,6 +1,6 @@
 {
   "name": "@mjt-services/daimon-common-2025",
-  "version": "2025.2.18-1040",
+  "version": "2025.2.18-1145",
   "sideEffects": false,
   "description": "daimon commmon",
   "main": "./dist/index.js",
