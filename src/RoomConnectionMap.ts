@@ -1,5 +1,5 @@
 import type {
-  RoomMessage,
+  RoomContent,
   RoomNode,
 } from "./type/RoomMessageNode";
 
@@ -7,7 +7,7 @@ export type RoomConnectionMap = {
   "room.addMessage": {
     request: {
       options?: Partial<{}>;
-      body: { roomId: string; parentId?: string } & RoomMessage;
+      body: { roomId: string; parentId?: string } & RoomContent;
     };
     response: { success: boolean };
     headers: {

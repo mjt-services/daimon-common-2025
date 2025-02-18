@@ -6,6 +6,10 @@ export type Daimon = {
   chara: CharaCardV2<DaimonCharaCardV2Extensions>;
 };
 
+export const DAIMON_OBJECT_STORE: ObjectStore<Daimon> = {
+  store: "daimon",
+};
+
 export type DaimonCharaCardV2Extensions = Partial<{
   avatarUrl: string;
   vrmUrl: string;
@@ -14,7 +18,3 @@ export type DaimonCharaCardV2Extensions = Partial<{
 }>;
 
 export type DaimonCharaCard = CharaCardV2<DaimonCharaCardV2Extensions>;
-
-export const DAIMON_OBJECT_STORE: ObjectStore<Daimon> = {
-  store: "daimon",
-};

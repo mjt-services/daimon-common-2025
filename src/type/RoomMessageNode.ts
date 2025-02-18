@@ -1,25 +1,17 @@
-export type Room = Partial<{
-  id: string;
-  name?: string;
-  parentId?: string;
-  topic: string; // short name for the channel
-  description?: string; // long description for the channel
-  createdAt: number;
-}>;
+import type { ObjectStore } from "@mjt-services/data-common-2025";
 
-export type RoomMessage = {
-  speakerId: string;
-  role: "user" | "assistant" | "system"; // The role of the speaker.
+export type RoomContent = {
+  creatorId: string;
 
   // --- Content ---
   // The type of content stored in this node.
-  contentType: "text" | "streaming" | "summary";
+  contentType: "text";
 
   // For finalized text messages, the complete Markdown string.
-  content?: string;
+  content: string;
 };
 
-export type RoomNode = RoomMessage & {
+export type RoomNode = RoomContent & {
   // --- Identity & Metadata ---
   id: string; // Globally unique identifier.
   roomId: string; // The room this message belongs to.
@@ -31,4 +23,8 @@ export type RoomNode = RoomMessage & {
   // --- Conversation Structure ---
   // Alternative candidate branches for this node.
   alternatives?: RoomNode[];
+};
+
+export const ROOM_NODE_OBJECT_STORE: ObjectStore<RoomNode> = {
+  store: "daimon",
 };
