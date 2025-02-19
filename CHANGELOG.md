@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-02-19
+- added Link type/store ([cda61ba](https://github.com/mjt-services/daimon-common-2025/commit/cda61ba8e4c18000f028de2c1fe68b89551436b2)) by Matt Taylor
+
 ## 2025-02-18
 - clean up Room type ([2656168](https://github.com/mjt-services/daimon-common-2025/commit/2656168ac5a51ede6a670e1c07db484c06f8ccad)) by Matt Taylor
 - rework of RoomNode ([54e80cc](https://github.com/mjt-services/daimon-common-2025/commit/54e80ccb56e23dee0f720783f6c9f145b9a1c15f)) by Matt Taylor

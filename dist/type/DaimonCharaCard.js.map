@@ -1,0 +1,1 @@
+{"version":3,"file":"DaimonCharaCard.js","sourceRoot":"","sources":["../../src/type/DaimonCharaCard.ts"],"names":[],"mappings":"","sourcesContent":["import type { CharaCardV2 } from \"./CharaCardV2\";\nimport type { DaimonCharaCardV2Extensions } from \"./DaimonCharaCardV2Extensions\";\n\n\nexport type DaimonCharaCard = CharaCardV2<DaimonCharaCardV2Extensions>;\n"]}

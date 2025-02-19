@@ -1,4 +1,5 @@
-import type { DaimonCharaCard, Daimon } from "./type/Daimon";
+import type { Daimon } from "./type/Daimon";
+import type { DaimonCharaCard } from "./type/DaimonCharaCard";
 export type DaimonConnectionMap = {
     "daimon.create": {
         request: {
