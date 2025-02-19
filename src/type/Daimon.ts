@@ -1,5 +1,6 @@
 import type { ObjectStore } from "@mjt-services/data-common-2025";
 import type { CharaCardV2 } from "./CharaCardV2";
+import type { DaimonCharaCardV2Extensions } from "./DaimonCharaCardV2Extensions";
 
 export type Daimon = {
   id: string;
@@ -10,11 +11,4 @@ export const DAIMON_OBJECT_STORE: ObjectStore<Daimon> = {
   store: "daimon",
 };
 
-export type DaimonCharaCardV2Extensions = Partial<{
-  avatarUrl: string;
-  vrmUrl: string;
-  voiceSampleUrl: string;
-  loraUrl: string;
-}>;
 
-export type DaimonCharaCard = CharaCardV2<DaimonCharaCardV2Extensions>;
