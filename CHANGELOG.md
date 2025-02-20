@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-02-20
+- remove Link type to move to data-common ([4029560](https://github.com/mjt-services/daimon-common-2025/commit/402956068a885b6737dd080e0d3b3b9171512ea6)) by Matt Taylor
+
 ## 2025-02-19
 - added Link type/store ([cda61ba](https://github.com/mjt-services/daimon-common-2025/commit/cda61ba8e4c18000f028de2c1fe68b89551436b2)) by Matt Taylor
 
