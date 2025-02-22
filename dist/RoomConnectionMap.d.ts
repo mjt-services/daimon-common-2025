@@ -1,4 +1,4 @@
-import type { RoomContent, Room } from "./type/RoomMessageNode";
+import type { RoomContent, Room } from "./type/Room";
 export type RoomConnectionMap = {
     "room.addMessage": {
         request: {

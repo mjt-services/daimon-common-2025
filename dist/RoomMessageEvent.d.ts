@@ -1,4 +1,4 @@
-import type { Room } from "./type/RoomMessageNode";
+import type { Room } from "./type/Room";
 export type RoomMessageEvent = Record<string, {
     request: {
         options?: Partial<{}>;
