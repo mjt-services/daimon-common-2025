@@ -1,7 +1,7 @@
 import type {
   RoomContent,
   Room,
-} from "./type/RoomMessageNode";
+} from "./type/Room";
 
 export type RoomConnectionMap = {
   "room.addMessage": {
