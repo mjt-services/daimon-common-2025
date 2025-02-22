@@ -1,6 +1,4 @@
 export * from "./DiamonConnectionMap";
-export * from "./RoomConnectionMap";
-export * from "./RoomMessageEvent";
 export * from "./type/Room";
 export * from "./type/Content";
 export * from "./type/CharaCardV2";

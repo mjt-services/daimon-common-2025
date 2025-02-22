@@ -1,6 +1,10 @@
 # Changelog
 
 
+## 2025-02-22
+- removed uneeded operations and events to cleanup ([bf53bef](https://github.com/mjt-services/daimon-common-2025/commit/bf53bef5e7eceafd7001276af78f464766437452)) by Matt Taylor
+- split Room, Content types. Intro of Content as a type ([58c0633](https://github.com/mjt-services/daimon-common-2025/commit/58c06335f2af4da77989d16fe7ff279dd606527e)) by Matt Taylor
+
 ## 2025-02-20
 - remove Link type to move to data-common ([4029560](https://github.com/mjt-services/daimon-common-2025/commit/402956068a885b6737dd080e0d3b3b9171512ea6)) by Matt Taylor
 

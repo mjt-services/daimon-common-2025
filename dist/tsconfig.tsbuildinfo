@@ -1,1 +1,1 @@
-{"root":["../src/diamonconnectionmap.ts","../src/roommessageevent.ts","../src/index.ts","../src/type/characardv2.ts","../src/type/content.ts","../src/type/daimon.ts","../src/type/daimoncharacard.ts","../src/type/daimoncharacardv2extensions.ts","../src/type/room.ts"],"errors":true,"version":"5.7.3"}
+{"root":["../src/diamonconnectionmap.ts","../src/index.ts","../src/type/characardv2.ts","../src/type/content.ts","../src/type/daimon.ts","../src/type/daimoncharacard.ts","../src/type/daimoncharacardv2extensions.ts","../src/type/room.ts"],"version":"5.7.3"}
