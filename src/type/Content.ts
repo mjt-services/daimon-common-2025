@@ -9,7 +9,7 @@ export type Content = {
   contentType: string;
 
   // The content itself, in the format specified by contentType.
-  content: unknown;
+  value: unknown;
 
   createdAt: number; // Timestamp (ms) when created.
   updatedAt?: number; // Updated when content changes (e.g. streaming updates).

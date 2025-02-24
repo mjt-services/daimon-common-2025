@@ -20,7 +20,7 @@
     "@mjt-services/data-common-2025": "github:mjt-services/data-common-2025"
   },
   "devDependencies": {
-    "typedoc": "^0.27.6",
+    "typedoc": "^0.27.8",
     "typescript": "^5.7.3"
   }
 }
