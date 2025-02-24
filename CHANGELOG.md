@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-02-24
+- Content.content -> Content.value` ([16b6ca5](https://github.com/mjt-services/daimon-common-2025/commit/16b6ca5d248557337c281b343e00ffc5bf84224a)) by Matt Taylor
+
 ## 2025-02-22
 - removed uneeded operations and events to cleanup ([bf53bef](https://github.com/mjt-services/daimon-common-2025/commit/bf53bef5e7eceafd7001276af78f464766437452)) by Matt Taylor
 - split Room, Content types. Intro of Content as a type ([58c0633](https://github.com/mjt-services/daimon-common-2025/commit/58c06335f2af4da77989d16fe7ff279dd606527e)) by Matt Taylor

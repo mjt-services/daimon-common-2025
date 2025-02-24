@@ -3,7 +3,7 @@ export type Content = {
     id: string;
     creatorId?: string;
     contentType: string;
-    content: unknown;
+    value: unknown;
     createdAt: number;
     updatedAt?: number;
     removed?: boolean;
