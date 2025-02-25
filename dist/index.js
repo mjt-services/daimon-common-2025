@@ -5,4 +5,5 @@ export * from "./type/CharaCardV2";
 export * from "./type/Daimon";
 export * from "./type/DaimonCharaCard";
 export * from "./type/DaimonCharaCardV2Extensions";
+export * from "./type/RoomDaimonLink";
 //# sourceMappingURL=index.js.map

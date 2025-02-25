@@ -2,6 +2,7 @@
 
 
 ## 2025-02-25
+- RoomDaimonLink exported ([73313a5](https://github.com/mjt-services/daimon-common-2025/commit/73313a5927e9b0268e0e15892c8816f2b348c40b)) by Matt Taylor
 - RoomDaimonLink added ([599d482](https://github.com/mjt-services/daimon-common-2025/commit/599d4828c12e9cd961921581c075d9c597ca0b72)) by Matt Taylor
 
 ## 2025-02-24
