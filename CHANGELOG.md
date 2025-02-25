@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-02-25
+- RoomDaimonLink added ([599d482](https://github.com/mjt-services/daimon-common-2025/commit/599d4828c12e9cd961921581c075d9c597ca0b72)) by Matt Taylor
+
 ## 2025-02-24
 - Content.content -> Content.value` ([16b6ca5](https://github.com/mjt-services/daimon-common-2025/commit/16b6ca5d248557337c281b343e00ffc5bf84224a)) by Matt Taylor
 
