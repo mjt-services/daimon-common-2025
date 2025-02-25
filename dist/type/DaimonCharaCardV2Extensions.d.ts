@@ -1,6 +1,6 @@
 export type DaimonCharaCardV2Extensions = Partial<{
-    avatarUrl: string;
-    vrmUrl: string;
-    voiceSampleUrl: string;
-    loraUrl: string;
+    avatar: string;
+    vrm: string;
+    voice: string;
+    lora: string;
 }>;
