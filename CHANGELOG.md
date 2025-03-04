@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-03-04
+- added daimon stop/alarm events ([0f6df61](https://github.com/mjt-services/daimon-common-2025/commit/0f6df61937489f77c37ab9aa6cebd27030ab7973)) by Matt Taylor
+
 ## 2025-02-25
 - simplify daimon-chara-card ext ([50bb657](https://github.com/mjt-services/daimon-common-2025/commit/50bb657ac94744ea77e6c0132bccf2a6cae9beb1)) by Matt Taylor
 - RoomDaimonLink exported ([73313a5](https://github.com/mjt-services/daimon-common-2025/commit/73313a5927e9b0268e0e15892c8816f2b348c40b)) by Matt Taylor
