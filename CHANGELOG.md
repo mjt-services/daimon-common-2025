@@ -2,6 +2,7 @@
 
 
 ## 2025-03-04
+- fix typo on DaimonEventMap ([5c0287c](https://github.com/mjt-services/daimon-common-2025/commit/5c0287c11c353eae17f0a0ebf563a5b7433eb607)) by Matt Taylor
 - added daimon stop/alarm events ([0f6df61](https://github.com/mjt-services/daimon-common-2025/commit/0f6df61937489f77c37ab9aa6cebd27030ab7973)) by Matt Taylor
 
 ## 2025-02-25
