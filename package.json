@@ -17,10 +17,11 @@
   "author": "Matt Taylor (https://mjt.dev)",
   "license": "MIT",
   "dependencies": {
+    "@mjt-engine/message": "github:mjt-engine/message",
     "@mjt-services/data-common-2025": "github:mjt-services/data-common-2025"
   },
   "devDependencies": {
-    "typedoc": "^0.27.8",
-    "typescript": "^5.7.3"
+    "typedoc": "^0.27.9",
+    "typescript": "^5.8.2"
   }
 }
