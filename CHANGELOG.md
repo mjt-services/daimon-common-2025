@@ -2,6 +2,7 @@
 
 
 ## 2025-03-04
+- llmModel -> llm ([5127b3e](https://github.com/mjt-services/daimon-common-2025/commit/5127b3eab38c8f0164ba1fa22f97c2861cbf407e)) by Matt Taylor
 - llmModel config for daimon chara ext ([8774b35](https://github.com/mjt-services/daimon-common-2025/commit/8774b35a3dacbb112abffcd0c0ecdbce51bde32b)) by Matt Taylor
 - fix typo on DaimonEventMap ([5c0287c](https://github.com/mjt-services/daimon-common-2025/commit/5c0287c11c353eae17f0a0ebf563a5b7433eb607)) by Matt Taylor
 - added daimon stop/alarm events ([0f6df61](https://github.com/mjt-services/daimon-common-2025/commit/0f6df61937489f77c37ab9aa6cebd27030ab7973)) by Matt Taylor

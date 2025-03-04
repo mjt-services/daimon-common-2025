@@ -3,5 +3,5 @@ export type DaimonCharaCardV2Extensions = Partial<{
     vrm: string;
     voice: string;
     lora: string;
-    llmModel: string;
+    llm: string;
 }>;
