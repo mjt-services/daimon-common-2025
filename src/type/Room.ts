@@ -4,6 +4,7 @@ export type Room = {
   id: string; // Globally unique identifier.
   parentId?: string; // The parent node's id (undefined for the root node).
   contentId: string;
+  userDaimonId?: string;
 };
 
 export const ROOM_OBJECT_STORE: ObjectStore<Room> = {
