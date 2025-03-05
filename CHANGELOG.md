@@ -2,6 +2,7 @@
 
 
 ## 2025-03-05
+- added userDaimonId to room ([84fe454](https://github.com/mjt-services/daimon-common-2025/commit/84fe454470c554a0ac70e10f783f271b7113a820)) by Matt Taylor
 - added isUser to daimon ([7b22cc0](https://github.com/mjt-services/daimon-common-2025/commit/7b22cc0a635a5e0201b651d9df6b280768e439cd)) by Matt Taylor
 
 ## 2025-03-04
