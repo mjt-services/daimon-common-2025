@@ -10,5 +10,3 @@ export type Daimon = {
 export const DAIMON_OBJECT_STORE: ObjectStore<Daimon> = {
   store: "daimon",
 };
-
-
