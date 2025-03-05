@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-03-05
+- added isUser to daimon ([7b22cc0](https://github.com/mjt-services/daimon-common-2025/commit/7b22cc0a635a5e0201b651d9df6b280768e439cd)) by Matt Taylor
+
 ## 2025-03-04
 - llmModel -> llm ([5127b3e](https://github.com/mjt-services/daimon-common-2025/commit/5127b3eab38c8f0164ba1fa22f97c2861cbf407e)) by Matt Taylor
 - llmModel config for daimon chara ext ([8774b35](https://github.com/mjt-services/daimon-common-2025/commit/8774b35a3dacbb112abffcd0c0ecdbce51bde32b)) by Matt Taylor
