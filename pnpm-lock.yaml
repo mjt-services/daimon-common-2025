@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@mjt-engine/message':
         specifier: github:mjt-engine/message
-        version: https://codeload.github.com/mjt-engine/message/tar.gz/1611eb40575b4ffc1e7daf387336d4c1027cd034(nats.ws@1.30.2)
+        version: https://codeload.github.com/mjt-engine/message/tar.gz/c1466d7244409b4caa3e6130249cc84327864f49(nats.ws@1.30.2)
       '@mjt-services/data-common-2025':
         specifier: github:mjt-services/data-common-2025
         version: https://codeload.github.com/mjt-services/data-common-2025/tar.gz/f09e3286c04111976d2df2f015a828ecbf302aeb(nats.ws@1.30.2)
@@ -35,9 +35,9 @@ packages:
     resolution: {tarball: https://codeload.github.com/mjt-engine/byte/tar.gz/472e6b25258a1d694808e214d3a41e07f7d8504f}
     version: 2025.1.19-1221
 
-  '@mjt-engine/message@https://codeload.github.com/mjt-engine/message/tar.gz/1611eb40575b4ffc1e7daf387336d4c1027cd034':
-    resolution: {tarball: https://codeload.github.com/mjt-engine/message/tar.gz/1611eb40575b4ffc1e7daf387336d4c1027cd034}
-    version: 2025.2.23-1330
+  '@mjt-engine/message@https://codeload.github.com/mjt-engine/message/tar.gz/c1466d7244409b4caa3e6130249cc84327864f49':
+    resolution: {tarball: https://codeload.github.com/mjt-engine/message/tar.gz/c1466d7244409b4caa3e6130249cc84327864f49}
+    version: 2025.3.4-1206
     peerDependencies:
       nats.ws: ^1.27.0
 
@@ -271,7 +271,7 @@ snapshots:
       '@mjt-engine/assert': https://codeload.github.com/mjt-engine/assert/tar.gz/58b808f45ca8a23cd7d613e75ba9e76c5fb70e55
       msgpackr: 1.11.2
 
-  '@mjt-engine/message@https://codeload.github.com/mjt-engine/message/tar.gz/1611eb40575b4ffc1e7daf387336d4c1027cd034(nats.ws@1.30.2)':
+  '@mjt-engine/message@https://codeload.github.com/mjt-engine/message/tar.gz/c1466d7244409b4caa3e6130249cc84327864f49(nats.ws@1.30.2)':
     dependencies:
       '@mjt-engine/byte': https://codeload.github.com/mjt-engine/byte/tar.gz/472e6b25258a1d694808e214d3a41e07f7d8504f
       '@mjt-engine/object': https://codeload.github.com/mjt-engine/object/tar.gz/75263a186b55c31764efb3a1bc075285f971946b
@@ -284,7 +284,7 @@ snapshots:
 
   '@mjt-services/data-common-2025@https://codeload.github.com/mjt-services/data-common-2025/tar.gz/f09e3286c04111976d2df2f015a828ecbf302aeb(nats.ws@1.30.2)':
     dependencies:
-      '@mjt-engine/message': https://codeload.github.com/mjt-engine/message/tar.gz/1611eb40575b4ffc1e7daf387336d4c1027cd034(nats.ws@1.30.2)
+      '@mjt-engine/message': https://codeload.github.com/mjt-engine/message/tar.gz/c1466d7244409b4caa3e6130249cc84327864f49(nats.ws@1.30.2)
       '@mjt-engine/object': https://codeload.github.com/mjt-engine/object/tar.gz/75263a186b55c31764efb3a1bc075285f971946b
     transitivePeerDependencies:
       - nats.ws
