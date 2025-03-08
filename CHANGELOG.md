@@ -2,6 +2,7 @@
 
 
 ## 2025-03-08
+- bumped deps ([76b0c2e](https://github.com/mjt-services/daimon-common-2025/commit/76b0c2e829e5e0265a822a075df688781d327252)) by Matt Taylor
 - added contextId to Room ([d04f961](https://github.com/mjt-services/daimon-common-2025/commit/d04f96197fcd4fc4d0c0c462933337865eaaf17b)) by Matt Taylor
 
 ## 2025-03-06
