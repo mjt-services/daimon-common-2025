@@ -3,6 +3,7 @@ export type Room = {
     id: string;
     parentId?: string;
     contentId: string;
+    contextId?: string;
     userDaimonId?: string;
 };
 export declare const ROOM_OBJECT_STORE: ObjectStore<Room>;

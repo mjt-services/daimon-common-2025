@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-03-08
+- added contextId to Room ([d04f961](https://github.com/mjt-services/daimon-common-2025/commit/d04f96197fcd4fc4d0c0c462933337865eaaf17b)) by Matt Taylor
+
 ## 2025-03-06
 - added known chara-card ext ([970be4a](https://github.com/mjt-services/daimon-common-2025/commit/970be4a50a6192fd6fea5d53797309af77450337)) by Matt Taylor
 
