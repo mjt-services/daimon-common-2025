@@ -15,6 +15,7 @@ export type Content = {
   updatedAt?: number; // Updated when content changes (e.g. streaming updates).
   removed?: boolean; // Flag to indicate if the content is removed
   finalized?: boolean; // Flag to indicate if the content is complete.
+  source?: unknown; // Source of the content, if applicable.
   alternatives?: Content[];
 };
 
