@@ -8,6 +8,7 @@ export type Content = {
     updatedAt?: number;
     removed?: boolean;
     finalized?: boolean;
+    source?: unknown;
     alternatives?: Content[];
 };
 export declare const CONTENT_OBJECT_STORE: ObjectStore<Content>;
