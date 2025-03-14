@@ -10,5 +10,10 @@ export type Content = {
     finalized?: boolean;
     source?: unknown;
     alternatives?: Content[];
+    progress?: Partial<{
+        current: number;
+        total: number;
+        etaSeconds: number;
+    }>;
 };
 export declare const CONTENT_OBJECT_STORE: ObjectStore<Content>;

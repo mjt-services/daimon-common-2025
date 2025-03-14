@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-03-14
+- added progress tracking to content ([5276fbb](https://github.com/mjt-services/daimon-common-2025/commit/5276fbbe9e4e98f304d6901ff3804f4a649e78e2)) by Matt Taylor
+
 ## 2025-03-10
 - added source to Content ([9ffd50d](https://github.com/mjt-services/daimon-common-2025/commit/9ffd50d2aa6deab06b9b6c08c479b66dfcefc5b3)) by Matt Taylor
 
