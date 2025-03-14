@@ -17,6 +17,11 @@ export type Content = {
   finalized?: boolean; // Flag to indicate if the content is complete.
   source?: unknown; // Source of the content, if applicable.
   alternatives?: Content[];
+  progress?: Partial<{
+    current: number;
+    total: number;
+    etaSeconds: number;
+  }>;
 };
 
 export const CONTENT_OBJECT_STORE: ObjectStore<Content> = {
