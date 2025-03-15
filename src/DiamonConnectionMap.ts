@@ -1,10 +1,17 @@
+import type { Content } from "./type/Content";
+
 export type DaimonConnectionMap = {
-  "daimon.import": {
+  "daimon.ask": {
     request: {
       options?: Partial<{}>;
-      body: { png: ArrayBuffer };
+      body: {
+        query: string;
+        roomId?: string;
+        userId?: string;
+        assistantId?: string;
+      };
     };
-    response: { id: string };
+    response: Content;
     headers: {
       url?: string;
       authToken?: string;
