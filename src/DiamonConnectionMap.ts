@@ -9,9 +9,10 @@ export type DaimonConnectionMap = {
         roomId?: string;
         userId?: string;
         assistantId?: string;
+        maxTokens?: number;
       };
     };
-    response: Content;
+    response: Partial<Content>;
     headers: {
       url?: string;
       authToken?: string;
