@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-03-21
+- first pass on Tool type, added dmRoom to chara-card ext ([8f9c157](https://github.com/mjt-services/daimon-common-2025/commit/8f9c1572d16dbfac2b92bd4794da0942008e4214)) by Matt Taylor
+
 ## 2025-03-19
 - added BaseDaimon ([df040a9](https://github.com/mjt-services/daimon-common-2025/commit/df040a92e9e9237f3b135f884246bdfd21c49059)) by Matt Taylor
 
