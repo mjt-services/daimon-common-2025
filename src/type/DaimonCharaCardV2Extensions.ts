@@ -15,4 +15,6 @@ export type DaimonCharaCardV2Extensions = KnownCharaCardV2Extensions &
     llm: string;
     isUser: boolean;
     dmRoom: string;
+    memoryRoom: string;
+    workRoom: string;
   }>;
