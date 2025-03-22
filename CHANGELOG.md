@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-03-22
+- added special memory, work rooms ([52da7c2](https://github.com/mjt-services/daimon-common-2025/commit/52da7c214fef037de7c9f0efbd4a7576372a6387)) by Matt Taylor
+
 ## 2025-03-21
 - first pass on Tool type, added dmRoom to chara-card ext ([8f9c157](https://github.com/mjt-services/daimon-common-2025/commit/8f9c1572d16dbfac2b92bd4794da0942008e4214)) by Matt Taylor
 

@@ -13,4 +13,6 @@ export type DaimonCharaCardV2Extensions = KnownCharaCardV2Extensions & Partial<{
     llm: string;
     isUser: boolean;
     dmRoom: string;
+    memoryRoom: string;
+    workRoom: string;
 }>;
