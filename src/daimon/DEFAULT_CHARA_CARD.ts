@@ -1,5 +1,4 @@
-import type { DaimonCharaCard } from "@mjt-services/daimon-common-2025";
-
+import type { DaimonCharaCard } from "../type/DaimonCharaCard";
 
 export const DEFAULT_CHARA_CARD: DaimonCharaCard = {
   data: {
