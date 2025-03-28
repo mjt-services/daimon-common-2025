@@ -1,6 +1,6 @@
 import { Datas, LINK_OBJECT_STORE, } from "@mjt-services/data-common-2025";
 import { DAIMON_OBJECT_STORE } from "../type/Daimon";
-import { isDefined } from "@mjt-engine/object";
+import { isDefined, isUndefined } from "@mjt-engine/object";
 export const findDaimonsByRoom = (con) => async (roomIdOrRoom) => {
     const roomId = typeof roomIdOrRoom === "string" ? roomIdOrRoom : roomIdOrRoom.id;
     const room = typeof roomIdOrRoom === "string"
@@ -8,6 +8,9 @@ export const findDaimonsByRoom = (con) => async (roomIdOrRoom) => {
             key: roomId,
         }))
         : roomIdOrRoom;
+    if (isUndefined(room)) {
+        throw new Error(`Room not found: ${roomId}`);
+    }
     const ids = (await Datas.search(con)({
         from: LINK_OBJECT_STORE,
         query: `values(@)[?roomId == '${roomId}'].daimonId | []`,

@@ -2,6 +2,7 @@
 
 
 ## 2025-03-28
+- error if now room for given roomId ([7ebdb9f](https://github.com/mjt-services/daimon-common-2025/commit/7ebdb9f5698ebcc446c5521148f383246b080d2f)) by Matt Taylor
 - search up room hierarchy for daimons by room ([2af5470](https://github.com/mjt-services/daimon-common-2025/commit/2af547088bc24bfc921a38ce35c55614ff84e3fd)) by Matt Taylor
 - added default chara chard and characard vars type to common ([898d913](https://github.com/mjt-services/daimon-common-2025/commit/898d913848debfba57ef5b65c1f08a4fee72ba7f)) by Matt Taylor
 - added default chara chard and characard vars type to common ([515bd73](https://github.com/mjt-services/daimon-common-2025/commit/515bd73008e9637b721ea96ac8e0bea2ca87edc6)) by Matt Taylor
