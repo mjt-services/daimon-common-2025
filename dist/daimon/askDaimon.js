@@ -6,6 +6,7 @@ import { findRoomChildren } from "./findRoomChildren";
 import { findPriorTimelineSiblings } from "./findPriorTimelineSiblings";
 import { findRoomContext } from "./findRoomContext";
 import { Daimons } from "./Daimons";
+import { MESSAGE_CONTENT_TYPE } from "./MESSAGE_CONTENT_TYPE";
 export const askDaimon = (con) => async (props) => {
     const { roomId, query, assistantId, userId, signal, onUpdate, responseTextMapper = (text) => text, maxTokens = 2048, assistant, } = props;
     // const con = await getConnection();
@@ -84,6 +85,7 @@ export const askDaimon = (con) => async (props) => {
                         createdAt,
                         updatedAt: Date.now(),
                         finalized: response.done,
+                        contentType: MESSAGE_CONTENT_TYPE,
                     };
                     await onUpdate?.(content);
                     if (response.done) {
