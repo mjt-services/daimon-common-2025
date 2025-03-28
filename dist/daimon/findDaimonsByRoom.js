@@ -2,6 +2,9 @@ import { Datas, LINK_OBJECT_STORE, } from "@mjt-services/data-common-2025";
 import { DAIMON_OBJECT_STORE } from "../type/Daimon";
 import { isDefined, isUndefined } from "@mjt-engine/object";
 export const findDaimonsByRoom = (con) => async (roomIdOrRoom) => {
+    if (isUndefined(roomIdOrRoom)) {
+        return [];
+    }
     const roomId = typeof roomIdOrRoom === "string" ? roomIdOrRoom : roomIdOrRoom.id;
     const room = typeof roomIdOrRoom === "string"
         ? (await Datas.get(con)({
@@ -9,7 +12,7 @@ export const findDaimonsByRoom = (con) => async (roomIdOrRoom) => {
         }))
         : roomIdOrRoom;
     if (isUndefined(room)) {
-        throw new Error(`Room not found: ${roomId}`);
+        return [];
     }
     const ids = (await Datas.search(con)({
         from: LINK_OBJECT_STORE,
