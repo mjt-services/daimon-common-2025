@@ -2,6 +2,7 @@
 
 
 ## 2025-03-28
+- added default chara chard and characard vars type to common ([898d913](https://github.com/mjt-services/daimon-common-2025/commit/898d913848debfba57ef5b65c1f08a4fee72ba7f)) by Matt Taylor
 - added default chara chard and characard vars type to common ([515bd73](https://github.com/mjt-services/daimon-common-2025/commit/515bd73008e9637b721ea96ac8e0bea2ca87edc6)) by Matt Taylor
 - expanded daimon utils ([0c91d67](https://github.com/mjt-services/daimon-common-2025/commit/0c91d67d6be8b78c352000dbbff2618478c331fc)) by Matt Taylor
 - added findDaimonsByRoom as common util ([6c0211d](https://github.com/mjt-services/daimon-common-2025/commit/6c0211d83a01982b5fa700165b7c432fe755bb2e)) by Matt Taylor
