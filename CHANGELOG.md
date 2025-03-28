@@ -2,6 +2,7 @@
 
 
 ## 2025-03-28
+- added room summary and askDaimon to Daimons ([74349b4](https://github.com/mjt-services/daimon-common-2025/commit/74349b4712579028457e8f6efd18a18d511c32b6)) by Matt Taylor
 - not an error if room does not exist ([907dd42](https://github.com/mjt-services/daimon-common-2025/commit/907dd428505eb25c0f68f468736391a37e80de59)) by Matt Taylor
 - error if now room for given roomId ([7ebdb9f](https://github.com/mjt-services/daimon-common-2025/commit/7ebdb9f5698ebcc446c5521148f383246b080d2f)) by Matt Taylor
 - search up room hierarchy for daimons by room ([2af5470](https://github.com/mjt-services/daimon-common-2025/commit/2af547088bc24bfc921a38ce35c55614ff84e3fd)) by Matt Taylor

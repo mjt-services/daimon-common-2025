@@ -1,0 +1,1 @@
+{"version":3,"file":"MESSAGE_CONTENT_TYPE.js","sourceRoot":"","sources":["../../src/daimon/MESSAGE_CONTENT_TYPE.ts"],"names":[],"mappings":"AACA,MAAM,CAAC,MAAM,oBAAoB,GAAG,YAAY,CAAC","sourcesContent":["\nexport const MESSAGE_CONTENT_TYPE = \"plain/text\";\n"]}

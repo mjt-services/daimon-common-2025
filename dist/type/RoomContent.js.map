@@ -1,0 +1,1 @@
+{"version":3,"file":"RoomContent.js","sourceRoot":"","sources":["../../src/type/RoomContent.ts"],"names":[],"mappings":"","sourcesContent":["import type { Content } from \"./Content\";\nimport type { Room } from \"./Room\";\n\nexport type RoomContent = {\n  room: Room;\n  content?: Content;\n};\n"]}
