@@ -15,3 +15,5 @@ export * from "./daimon/CharaCardVars";
 
 export * from "./daimon/MESSAGE_CONTENT_TYPE";
 export * from "./daimon/summary/SUMMARY_CONTENT_TYPE";
+
+export * from "./room/Rooms";
