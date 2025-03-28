@@ -1,4 +1,5 @@
 import type { Content } from "./type/Content";
+import type { ToolRequest, ToolResponse } from "./type/Tool";
 
 export type DaimonConnectionMap = {
   "daimon.ask": {
@@ -13,6 +14,17 @@ export type DaimonConnectionMap = {
       };
     };
     response: Partial<Content>;
+    headers: {
+      url?: string;
+      authToken?: string;
+    };
+  };
+  "tool.fetchRss": {
+    request: {
+      options?: Partial<{}>;
+      body: ToolRequest;
+    };
+    response: ToolResponse;
     headers: {
       url?: string;
       authToken?: string;
