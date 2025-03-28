@@ -13,4 +13,5 @@ export * from "./daimon/DEFAULT_CHARA_CARD";
 export * from "./daimon/CharaCardVars";
 export * from "./daimon/MESSAGE_CONTENT_TYPE";
 export * from "./daimon/summary/SUMMARY_CONTENT_TYPE";
+export * from "./room/Rooms";
 //# sourceMappingURL=index.js.map

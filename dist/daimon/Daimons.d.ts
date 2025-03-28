@@ -9,11 +9,5 @@ export declare const Daimons: {
         onUpdate?: (content: Partial<import("..").Content>) => void | Promise<void>;
         responseTextMapper?: (text: string) => string;
     }) => Promise<Partial<import("..").Content>>;
-    addRoomSummary: <M extends import("@mjt-services/data-common-2025").DataConnectionMap & import("@mjt-services/textgen-common-2025").TextgenConnectionMap>(con: import("@mjt-engine/message/dist/createConnection").MessageConnectionInstance<M>) => ({ roomId, query, model, chunkSize, overlapSize, }: {
-        roomId: string;
-        query: string;
-        model?: string;
-        chunkSize?: number;
-        overlapSize?: number;
-    }) => Promise<void>;
+    getAllDaimons: <M extends import("@mjt-services/data-common-2025").DataConnectionMap>(con: import("@mjt-engine/message/dist/createConnection").MessageConnectionInstance<M>) => () => Promise<import("..").Daimon[]>;
 };
