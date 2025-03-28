@@ -10,7 +10,10 @@ import type { Room } from "../type/Room";
 
 export const findDaimonsByRoom =
   <M extends DataConnectionMap>(con: MessageConnectionInstance<M>) =>
-  async (roomIdOrRoom: string | Room): Promise<Daimon[]> => {
+  async (roomIdOrRoom?: string | Room): Promise<Daimon[]> => {
+    if (isUndefined(roomIdOrRoom)) {
+      return [];
+    }
     const roomId =
       typeof roomIdOrRoom === "string" ? roomIdOrRoom : roomIdOrRoom.id;
     const room =
@@ -21,7 +24,7 @@ export const findDaimonsByRoom =
         : roomIdOrRoom;
 
     if (isUndefined(room)) {
-      throw new Error(`Room not found: ${roomId}`);
+      return [];
     }
 
     const ids = (await Datas.search(con)({
