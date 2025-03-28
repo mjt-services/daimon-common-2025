@@ -18,6 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "@mjt-engine/message": "github:mjt-engine/message",
+    "@mjt-engine/object": "github:mjt-engine/object",
     "@mjt-services/data-common-2025": "github:mjt-services/data-common-2025"
   },
   "devDependencies": {
