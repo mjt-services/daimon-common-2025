@@ -1,0 +1,1 @@
+{"version":3,"file":"Daimons.js","sourceRoot":"","sources":["../../src/daimon/Daimons.ts"],"names":[],"mappings":"AAEA,MAAM,CAAC,MAAM,OAAO,GAAG;IACrB,iBAAiB;CAClB,CAAC","sourcesContent":["\n\nexport const Daimons = {\n  findDaimonsByRoom,\n};\n"]}

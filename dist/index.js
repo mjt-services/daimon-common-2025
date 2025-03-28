@@ -7,4 +7,5 @@ export * from "./type/DaimonCharaCard";
 export * from "./type/DaimonCharaCardV2Extensions";
 export * from "./type/RoomDaimonLink";
 export * from "./event/DaimonEventMap";
+export * from "./daimon/Daimons";
 //# sourceMappingURL=index.js.map
