@@ -1,6 +1,10 @@
 # Changelog
 
 
+## 2025-03-28
+- added findDaimonsByRoom as common util ([6c0211d](https://github.com/mjt-services/daimon-common-2025/commit/6c0211d83a01982b5fa700165b7c432fe755bb2e)) by Matt Taylor
+- added findDaimonsByRoom as common util ([6caacb2](https://github.com/mjt-services/daimon-common-2025/commit/6caacb27b58130876ed769d1d3bf2799960add70)) by Matt Taylor
+
 ## 2025-03-22
 - added special memory, work rooms ([52da7c2](https://github.com/mjt-services/daimon-common-2025/commit/52da7c214fef037de7c9f0efbd4a7576372a6387)) by Matt Taylor
 
