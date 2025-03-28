@@ -1,0 +1,1 @@
+{"version":3,"file":"CharaCardVars.js","sourceRoot":"","sources":["../../src/daimon/CharaCardVars.ts"],"names":[],"mappings":"","sourcesContent":["\nexport type CharaCardVars = Partial<{\n  char: string;\n  user: string;\n}>;\n"]}

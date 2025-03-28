@@ -8,4 +8,6 @@ export * from "./type/DaimonCharaCardV2Extensions";
 export * from "./type/RoomDaimonLink";
 export * from "./event/DaimonEventMap";
 export * from "./daimon/Daimons";
+export * from "./daimon/DEFAULT_CHARA_CARD";
+export * from "./daimon/CharaCardVars";
 //# sourceMappingURL=index.js.map
