@@ -5,7 +5,7 @@ import {
   type DataConnectionMap,
 } from "@mjt-services/data-common-2025";
 import { DAIMON_OBJECT_STORE, type Daimon } from "../type/Daimon";
-import { isDefined } from "@mjt-engine/object";
+import { isDefined, isUndefined } from "@mjt-engine/object";
 import type { Room } from "../type/Room";
 
 export const findDaimonsByRoom =
@@ -19,6 +19,10 @@ export const findDaimonsByRoom =
             key: roomId,
           })) as Room)
         : roomIdOrRoom;
+
+    if (isUndefined(room)) {
+      throw new Error(`Room not found: ${roomId}`);
+    }
 
     const ids = (await Datas.search(con)({
       from: LINK_OBJECT_STORE,
