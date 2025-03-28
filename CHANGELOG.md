@@ -2,6 +2,7 @@
 
 
 ## 2025-03-28
+- expanded daimon utils ([0c91d67](https://github.com/mjt-services/daimon-common-2025/commit/0c91d67d6be8b78c352000dbbff2618478c331fc)) by Matt Taylor
 - added findDaimonsByRoom as common util ([6c0211d](https://github.com/mjt-services/daimon-common-2025/commit/6c0211d83a01982b5fa700165b7c432fe755bb2e)) by Matt Taylor
 - added findDaimonsByRoom as common util ([6caacb2](https://github.com/mjt-services/daimon-common-2025/commit/6caacb27b58130876ed769d1d3bf2799960add70)) by Matt Taylor
 
