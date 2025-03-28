@@ -15,6 +15,7 @@ import type { DaimonConnectionMap } from "../DiamonConnectionMap";
 import type { BaseDaimon, Daimon } from "../type/Daimon";
 import type { Content } from "../type/Content";
 import { Daimons } from "./Daimons";
+import { MESSAGE_CONTENT_TYPE } from "./MESSAGE_CONTENT_TYPE";
 
 export const askDaimon =
   <M extends DataConnectionMap & TextgenConnectionMap>(
@@ -127,6 +128,7 @@ export const askDaimon =
               createdAt,
               updatedAt: Date.now(),
               finalized: response.done,
+              contentType: MESSAGE_CONTENT_TYPE,
             };
             await onUpdate?.(content);
             if (response.done) {
