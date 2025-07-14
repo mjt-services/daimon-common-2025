@@ -17,4 +17,5 @@ export type DaimonCharaCardV2Extensions = KnownCharaCardV2Extensions &
     dmRoom: string;
     memoryRoom: string;
     workRoom: string;
+    lastUsed: number;
   }>;
