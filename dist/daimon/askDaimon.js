@@ -43,6 +43,9 @@ export const askDaimon = (con) => async (props) => {
     const daimonSystemPrompt = isDefined(assistantDaimon)
         ? Daimons.daimonToSystemPrompt(assistantDaimon, vars)
         : undefined;
+    const userSystemPrompt = isDefined(userDaimon)
+        ? Daimons.daimonToSystemPrompt(userDaimon, vars)
+        : undefined;
     const roomContentsPrompt = await roomContentsToPrompt(con)([
         ...priorTimelineSiblinRoomContents,
         ...roomContents,
@@ -52,8 +55,10 @@ export const askDaimon = (con) => async (props) => {
         : undefined;
     const fullSystemPrompt = [
         roomContextPrompt,
-        "# Assistant Description",
+        `# ${assistantName} Description`,
         daimonSystemPrompt,
+        `# ${userName} Description`,
+        userSystemPrompt,
         "# Conversation History",
         roomContentsPrompt,
     ]
