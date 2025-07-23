@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-07-23
+- remove scenero from daimon prompt ([8085903](https://github.com/mjt-services/daimon-common-2025/commit/808590340e253b9eac02bceb116ec9b265020201)) by user
+
 ## 2025-07-16
 - tweak daimon system prompt ([e22ff6c](https://github.com/mjt-services/daimon-common-2025/commit/e22ff6cd30cd40da9d926d075e77e639da9172d5)) by user
 
