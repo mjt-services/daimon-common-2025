@@ -7,6 +7,7 @@ import { findPriorTimelineSiblings } from "./findPriorTimelineSiblings";
 import { findRoomContext } from "./findRoomContext";
 import { Daimons } from "./Daimons";
 import { MESSAGE_CONTENT_TYPE } from "./MESSAGE_CONTENT_TYPE";
+import { renderTemplate } from "./renderTemplate";
 export const askDaimon = (con) => async (props) => {
     const { roomId, query, assistantId, userId, signal, onUpdate, responseTextMapper = (text) => text, maxTokens = 2048, assistant, } = props;
     // const con = await getConnection();
@@ -36,6 +37,7 @@ export const askDaimon = (con) => async (props) => {
     const priorTimelineSiblinRoomContents = await findPriorTimelineSiblings(con)(roomId);
     const assistantName = assistantDaimon?.chara?.data.name ?? "assistant";
     const userName = userDaimon?.chara.data.name ?? "user";
+    const scenario = userDaimon?.chara.data.scenario ?? assistantDaimon?.chara.data.scenario;
     const vars = {
         user: userName,
         char: assistantName,
@@ -55,6 +57,8 @@ export const askDaimon = (con) => async (props) => {
         : undefined;
     const fullSystemPrompt = [
         roomContextPrompt,
+        "# Scenerio",
+        renderTemplate(scenario, vars),
         `# ${assistantName} Description`,
         daimonSystemPrompt,
         `# ${userName} Description`,
