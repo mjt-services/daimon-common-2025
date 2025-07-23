@@ -16,6 +16,7 @@ import type { BaseDaimon, Daimon } from "../type/Daimon";
 import type { Content } from "../type/Content";
 import { Daimons } from "./Daimons";
 import { MESSAGE_CONTENT_TYPE } from "./MESSAGE_CONTENT_TYPE";
+import { renderTemplate } from "./renderTemplate";
 
 export const askDaimon =
   <M extends DataConnectionMap & TextgenConnectionMap>(
@@ -74,6 +75,8 @@ export const askDaimon =
 
     const assistantName = assistantDaimon?.chara?.data.name ?? "assistant";
     const userName = userDaimon?.chara.data.name ?? "user";
+    const scenario =
+      userDaimon?.chara.data.scenario ?? assistantDaimon?.chara.data.scenario;
     const vars = {
       user: userName,
       char: assistantName,
@@ -85,6 +88,7 @@ export const askDaimon =
     const userSystemPrompt = isDefined(userDaimon)
       ? Daimons.daimonToSystemPrompt(userDaimon, vars)
       : undefined;
+
     const roomContentsPrompt = await roomContentsToPrompt(con)([
       ...priorTimelineSiblinRoomContents,
       ...roomContents,
@@ -95,6 +99,8 @@ export const askDaimon =
 
     const fullSystemPrompt = [
       roomContextPrompt,
+      "# Scenerio",
+      renderTemplate(scenario, vars),
       `# ${assistantName} Description`,
       daimonSystemPrompt,
       `# ${userName} Description`,
