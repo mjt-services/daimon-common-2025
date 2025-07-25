@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-07-25
+- empty scenerio switch ([55b9fbe](https://github.com/mjt-services/daimon-common-2025/commit/55b9fbe8d02e3c23cc44ce969ccb0609d75ac21b)) by user
+
 ## 2025-07-23
 - use user scenerio if avail, otherwise assistant scenerio ([e27c0fd](https://github.com/mjt-services/daimon-common-2025/commit/e27c0fde7f023e1c6b9ea23995ab8f6b6e2736f9)) by user
 - remove scenero from daimon prompt ([8085903](https://github.com/mjt-services/daimon-common-2025/commit/808590340e253b9eac02bceb116ec9b265020201)) by user

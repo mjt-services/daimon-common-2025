@@ -1,4 +1,4 @@
-import { isDefined } from "@mjt-engine/object";
+import { isDefined, isEmpty } from "@mjt-engine/object";
 import { Datas, isEntity, } from "@mjt-services/data-common-2025";
 import { roomContentsToPrompt } from "./roomContentsToPrompt";
 import { roomsToRoomContents } from "./roomsToRoomContents";
@@ -37,7 +37,10 @@ export const askDaimon = (con) => async (props) => {
     const priorTimelineSiblinRoomContents = await findPriorTimelineSiblings(con)(roomId);
     const assistantName = assistantDaimon?.chara?.data.name ?? "assistant";
     const userName = userDaimon?.chara.data.name ?? "user";
-    const scenario = userDaimon?.chara.data.scenario ?? assistantDaimon?.chara.data.scenario;
+    let scenario = userDaimon?.chara.data.scenario;
+    if (isEmpty(scenario)) {
+        scenario = assistantDaimon?.chara.data.scenario;
+    }
     const vars = {
         user: userName,
         char: assistantName,
