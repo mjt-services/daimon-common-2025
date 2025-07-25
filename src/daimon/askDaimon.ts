@@ -1,4 +1,4 @@
-import { isDefined } from "@mjt-engine/object";
+import { iff, isDefined, isEmpty } from "@mjt-engine/object";
 import {
   Datas,
   isEntity,
@@ -75,8 +75,10 @@ export const askDaimon =
 
     const assistantName = assistantDaimon?.chara?.data.name ?? "assistant";
     const userName = userDaimon?.chara.data.name ?? "user";
-    const scenario =
-      userDaimon?.chara.data.scenario ?? assistantDaimon?.chara.data.scenario;
+    let scenario = userDaimon?.chara.data.scenario;
+    if (isEmpty(scenario)) {
+      scenario = assistantDaimon?.chara.data.scenario;
+    }
     const vars = {
       user: userName,
       char: assistantName,
